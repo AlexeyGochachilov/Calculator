@@ -35,7 +35,7 @@ public class Calculator {
             char operation = scanner.next().charAt(0);
             double operand2 = scanner.nextDouble();
             double resalt = calc(operand1, operation, operand2);
-            System.out.println(resalt);
+            System.out.println("= " + resalt);
             INNER:
             while (true) {
                 operation = scanner.next().charAt(0);
@@ -46,7 +46,7 @@ public class Calculator {
                 } else {
                     operand2 = scanner.nextDouble();
                     resalt = calc(resalt, operation, operand2);
-                    System.out.println(resalt);
+                    System.out.println("= " + resalt);
                 }
             }
         }
