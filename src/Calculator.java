@@ -15,6 +15,10 @@ public class Calculator {
                 resalt = operand1 * operand2;
                 break;
             case '/':
+                if (operand2 == 0) {
+                    System.out.println("На ноль делить нельзя");
+                    operand2 = 1;
+                }
                 resalt = operand1 / operand2;
                 break;
             default:
